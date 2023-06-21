@@ -281,7 +281,7 @@ class GoogleMapsAPIScraper:
 
         # Parse review rating
         try:
-            rating_text = review.find(True, class_="Fam1ne EBe2gf").get("aria-label")
+            rating_text = review.find(True, class_="lTi8oc z3HNkc").get("aria-label")
             rating_text = re.sub(",", ".", rating_text)
             rating = re.findall("[0-9]+[.][0-9]*", rating_text)
             result["rating"] = float(rating[0])
